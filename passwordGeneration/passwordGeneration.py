@@ -1,5 +1,6 @@
 # Importação da biblioteca Random;
 import random
+
 # Importação da biblioteca OS;
 import os
 
@@ -22,11 +23,16 @@ except:
 with open(os.path.join(folder,"password.txt"), 'r') as arquivo:
     conteudo_original = arquivo.read()
 
+
 # Informações dos caracteres que seram permitidos para a criação de senhas;
 letras_maiusculas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 letras_minusculas = "abcdefghijklmnopqrstuvwxyz"
 numeros = "0123456789"
+
 simbolos = "!@#$%&*()_-+=[]{}|;:,.<>/?"
+
+simbolos = "!@#$%&*()_+-=[]{}|;:,.<>/?"
+n
 todos_caracteres = letras_maiusculas + letras_minusculas + numeros + simbolos
 con = len(todos_caracteres)
 
@@ -76,6 +82,7 @@ def generationPassword(a,b):
     senha += random.choice(a)
   return senha
 
+
 while True:
   # Agora vamos pedir para qual software essa senha sera salva;
   info = input('Para qual software você quer salvar essa senha: ')
@@ -93,3 +100,10 @@ while True:
     arquivo.write(senha+'- Senha salva para software - '+info+'\n')
     
   print('Criado com Sucesso👌\nAtualizado')
+
+#Agora é vamos fazer uma forma de mostrar a senha na tela;
+senha = generationPassword(todos_caracteres,comprimento_senha)
+print("Sua senha é: ",senha)
+  
+  
+
