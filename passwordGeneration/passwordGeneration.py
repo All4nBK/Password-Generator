@@ -32,7 +32,6 @@ numeros = "0123456789"
 simbolos = "!@#$%&*()_-+=[]{}|;:,.<>/?"
 
 simbolos = "!@#$%&*()_+-=[]{}|;:,.<>/?"
-n
 todos_caracteres = letras_maiusculas + letras_minusculas + numeros + simbolos
 con = len(todos_caracteres)
 
