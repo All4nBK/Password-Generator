@@ -32,7 +32,6 @@ numeros = "0123456789"
 simbolos = "!@#$%&*()_-+=[]{}|;:,.<>/?"
 
 simbolos = "!@#$%&*()_+-=[]{}|;:,.<>/?"
-n
 todos_caracteres = letras_maiusculas + letras_minusculas + numeros + simbolos
 con = len(todos_caracteres)
 
@@ -86,7 +85,7 @@ def generationPassword(a,b):
 while True:
   # Agora vamos pedir para qual software essa senha sera salva;
   info = input('Para qual software você quer salvar essa senha: ')
-  trocar_senha = 0
+  trocar_senha = 1
   # Agora é criado um While com a variavel 'trocar_senha' com seu valor '1' e para que o usuario possa trocar a senha novamente;
   while trocar_senha == 1:
     senha = generationPassword(todos_caracteres,comprimento_senha)
